@@ -1,0 +1,17 @@
+.popup {
+  width: 300px;
+  padding: 14px;
+  background: #fff;
+  color: #666;
+  font-size: 13px;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+.popup a {
+  color: #666;
+  text-decoration: none;
+  display: block;
+}
+.popup.show {
+  opacity: 1;
+}

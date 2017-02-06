@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)https://s.codepen.io/boomerang/7800aa32ceee757a1e248af98388bab61485407200432/index.html -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./console_runner-5710c30fb566082d9fcb6e7d97ee7e3f2a326128c9f334a4231b6fd752b29965.js"></script><script src="./events_runner-d5e4bf42585b8da8c18f7d963dbfc17cd66a79aa586c9448c4de8d6952ee9d97.js"></script><script src="./css_live_reload_init-25d1423d5d6fb975e7d61832d2c061422a94963ca446583b965dfc5569147311.js"></script><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico"><link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111"><link rel="canonical" href="https://codepen.io/ahmedtarek2134/pen/ygbNKp">
+<link href="./css(1)" rel="stylesheet">
+<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style class="cp-pen-styles">body {
+  height: 100vh;
+}
+.screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.screen .rectangle {
+  opacity: 0.5;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.text {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  color: #fff;
+  text-align: center;
+  font-family: Josefin Sans;
+  top: 5%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.text h1 {
+  margin: 0;
+}
+</style></head><body>
+
+<div class="text">
+  <h1>Random Wallpaper Generator</h1>
+  <p>Press On The Spacebar To Change Wallpaper</p>
+  <p>Screenshot the screen and make it your wallpaper, it's really cool!</p>
+</div>
+<div class="screen" style="background-color: rgb(65, 189, 225);">
+  <div class="rectangle one" style="left: 30%; top: 36%; width: 91%; height: 85%; background-color: rgb(118, 183, 133); transform: rotate(205deg) translateX(58%) translateY(67%);"></div>
+  <div class="rectangle two" style="left: 35%; top: 30%; width: 84%; height: 56%; background-color: rgb(201, 230, 12); transform: rotate(284deg) translateX(20%) translateY(43%);"></div>
+  <div class="rectangle three" style="left: 21%; top: 32%; width: 46%; height: 63%; background-color: rgb(249, 108, 17); transform: rotate(233deg) translateX(90%) translateY(75%);"></div>
+  <div class="rectangle four" style="left: 33%; top: 36%; width: 87%; height: 60%; background-color: rgb(243, 205, 114); transform: rotate(4deg) translateX(91%) translateY(75%);"></div>
+  <div class="rectangle five" style="left: 29%; top: 26%; width: 26%; height: 46%; background-color: rgb(3, 190, 136); transform: rotate(278deg) translateX(89%) translateY(29%);"></div>
+  <div class="rectangle six" style="left: 21%; top: 29%; width: 83%; height: 95%; background-color: rgb(133, 43, 11); transform: rotate(210deg) translateX(31%) translateY(29%);"></div>
+  <div class="rectangle seven" style="left: 34%; top: 35%; width: 56%; height: 36%; background-color: rgb(226, 133, 184); transform: rotate(280deg) translateX(93%) translateY(15%);"></div>
+  <div class="rectangle eight" style="left: 31%; top: 36%; width: 28%; height: 45%; background-color: rgb(108, 0, 114); transform: rotate(191deg) translateX(65%) translateY(49%);"></div>
+  <div class="rectangle nine" style="left: 25%; top: 30%; width: 52%; height: 27%; background-color: rgb(95, 9, 186); transform: rotate(102deg) translateX(62%) translateY(95%);"></div>
+  <div class="rectangle ten" style="left: 38%; top: 39%; width: 27%; height: 32%; background-color: rgb(94, 124, 180); transform: rotate(281deg) translateX(34%) translateY(15%);"></div>
+  <div class="rectangle eleven" style="left: 26%; top: 31%; width: 29%; height: 46%; background-color: rgb(40, 52, 42); transform: rotate(47deg) translateX(16%) translateY(63%);"></div>
+  <div class="rectangle twelve" style="left: 28%; top: 37%; width: 44%; height: 84%; background-color: rgb(145, 30, 109); transform: rotate(109deg) translateX(89%) translateY(29%);"></div>
+  <div class="rectangle thirteen" style="left: 26%; top: 37%; width: 49%; height: 35%; background-color: rgb(210, 30, 190); transform: rotate(201deg) translateX(60%) translateY(45%);"></div>
+  <div class="rectangle fourteen" style="left: 21%; top: 23%; width: 25%; height: 67%; background-color: rgb(51, 20, 31); transform: rotate(105deg) translateX(56%) translateY(16%);"></div>
+  <div class="rectangle fifteen" style="left: 21%; top: 29%; width: 37%; height: 72%; background-color: rgb(186, 91, 4); transform: rotate(158deg) translateX(31%) translateY(15%);"></div>
+  <div class="rectangle sixteen" style="left: 31%; top: 34%; width: 71%; height: 59%; background-color: rgb(52, 174, 99); transform: rotate(242deg) translateX(7%) translateY(71%);"></div>
+  <div class="rectangle seventeen" style="left: 24%; top: 38%; width: 50%; height: 89%; background-color: rgb(164, 194, 63); transform: rotate(337deg) translateX(59%) translateY(17%);"></div>
+  <div class="rectangle eighteen" style="left: 20%; top: 26%; width: 24%; height: 36%; background-color: rgb(243, 160, 83); transform: rotate(61deg) translateX(8%) translateY(43%);"></div>
+  <div class="rectangle ninteen" style="left: 30%; top: 35%; width: 71%; height: 62%; background-color: rgb(59, 16, 124); transform: rotate(104deg) translateX(47%) translateY(34%);"></div>
+  <div class="rectangle twenty" style="left: 37%; top: 21%; width: 77%; height: 26%; background-color: rgb(123, 174, 163); transform: rotate(285deg) translateX(21%) translateY(26%);"></div>
+  <div class="rectangle twentyone" style="left: 27%; top: 28%; width: 43%; height: 98%; background-color: rgb(232, 156, 227); transform: rotate(109deg) translateX(60%) translateY(25%);"></div>
+  <div class="rectangle twentytwo" style="left: 28%; top: 24%; width: 36%; height: 70%; background-color: rgb(199, 143, 159); transform: rotate(5deg) translateX(46%) translateY(12%);"></div>
+  <div class="rectangle twentythree" style="left: 21%; top: 24%; width: 62%; height: 93%; background-color: rgb(114, 184, 138); transform: rotate(352deg) translateX(16%) translateY(8%);"></div>
+  <div class="rectangle twentyfour" style="left: 30%; top: 26%; width: 46%; height: 70%; background-color: rgb(148, 152, 21); transform: rotate(298deg) translateX(95%) translateY(33%);"></div>
+  <div class="rectangle twentyfive" style="left: 34%; top: 28%; width: 82%; height: 69%; background-color: rgb(84, 19, 212); transform: rotate(150deg) translateX(62%) translateY(6%);"></div>
+  <div class="rectangle twentysix" style="left: 39%; top: 25%; width: 36%; height: 20%; background-color: rgb(147, 165, 218); transform: rotate(272deg) translateX(93%) translateY(22%);"></div>
+  <div class="rectangle twentyseven" style="left: 30%; top: 39%; width: 39%; height: 37%; background-color: rgb(208, 179, 31); transform: rotate(132deg) translateX(51%) translateY(42%);"></div>
+  <div class="rectangle twentyeight" style="left: 28%; top: 38%; width: 78%; height: 41%; background-color: rgb(120, 25, 250); transform: rotate(199deg) translateX(74%) translateY(46%);"></div>
+  <div class="rectangle twentynine" style="left: 33%; top: 27%; width: 27%; height: 22%; background-color: rgb(129, 46, 246); transform: rotate(60deg) translateX(33%) translateY(79%);"></div>
+  <div class="rectangle thirty" style="left: 34%; top: 27%; width: 93%; height: 59%; background-color: rgb(253, 109, 160); transform: rotate(81deg) translateX(53%) translateY(96%);"> </div>
+</div>
+<script src="./stopExecutionOnTimeout-58d22c749295bca52f487966e382a94a495ac103faca9206cbd160bdf8aedf2a.js"></script>
+<script>'use strict';
+var rectangle = function rectangle(element) {
+    document.querySelector(element).style.left = Math.floor(Math.random() * (40 - 20) + 20) + '%';
+    document.querySelector(element).style.top = Math.floor(Math.random() * (40 - 20) + 20) + '%';
+    document.querySelector(element).style.width = Math.floor(Math.random() * (100 - 20) + 20) + '%';
+    document.querySelector(element).style.height = Math.floor(Math.random() * (100 - 20) + 20) + '%';
+    document.querySelector(element).style.backgroundColor = '#000000'.replace(/0/g, function () {
+        return (~~(Math.random() * 16)).toString(16);
+    });
+    document.querySelector(element).style.transform = 'rotate(' + Math.floor(Math.random() * 360) + 'deg' + ')' + ' ' + 'translateX(' + Math.floor(Math.random() * (100 - 0) + 0) + '%' + ')' + ' ' + 'translateY(' + Math.floor(Math.random() * (100 - 0) + 0) + '%' + ')';
+};
+rectangle('.rectangle.one');
+rectangle('.rectangle.two');
+rectangle('.rectangle.three');
+rectangle('.rectangle.four');
+rectangle('.rectangle.five');
+rectangle('.rectangle.six');
+rectangle('.rectangle.seven');
+rectangle('.rectangle.eight');
+rectangle('.rectangle.nine');
+rectangle('.rectangle.ten');
+rectangle('.rectangle.eleven');
+rectangle('.rectangle.twelve');
+rectangle('.rectangle.thirteen');
+rectangle('.rectangle.fourteen');
+rectangle('.rectangle.fifteen');
+rectangle('.rectangle.sixteen');
+rectangle('.rectangle.seventeen');
+rectangle('.rectangle.eighteen');
+rectangle('.rectangle.ninteen');
+rectangle('.rectangle.twenty');
+rectangle('.rectangle.twentyone');
+rectangle('.rectangle.twentytwo');
+rectangle('.rectangle.twentythree');
+rectangle('.rectangle.twentyfour');
+rectangle('.rectangle.twentyfive');
+rectangle('.rectangle.twentysix');
+rectangle('.rectangle.twentyseven');
+rectangle('.rectangle.twentyeight');
+rectangle('.rectangle.twentynine');
+rectangle('.rectangle.thirty');
+document.querySelector('.screen').style.backgroundColor = '#000000'.replace(/0/g, function () {
+    return (~~(Math.random() * 16)).toString(16);
+});
+var button = document.querySelector('.newWallpaper');
+document.onkeyup = function (e) {
+    if (e.keyCode == 32) {
+        rectangle('.rectangle.one');
+        rectangle('.rectangle.two');
+        rectangle('.rectangle.three');
+        rectangle('.rectangle.four');
+        rectangle('.rectangle.five');
+        rectangle('.rectangle.six');
+        rectangle('.rectangle.seven');
+        rectangle('.rectangle.eight');
+        rectangle('.rectangle.nine');
+        rectangle('.rectangle.ten');
+        rectangle('.rectangle.eleven');
+        rectangle('.rectangle.twelve');
+        rectangle('.rectangle.thirteen');
+        rectangle('.rectangle.fourteen');
+        rectangle('.rectangle.fifteen');
+        rectangle('.rectangle.sixteen');
+        rectangle('.rectangle.seventeen');
+        rectangle('.rectangle.eighteen');
+        rectangle('.rectangle.ninteen');
+        rectangle('.rectangle.twenty');
+        rectangle('.rectangle.twentyone');
+        rectangle('.rectangle.twentytwo');
+        rectangle('.rectangle.twentythree');
+        rectangle('.rectangle.twentyfour');
+        rectangle('.rectangle.twentyfive');
+        rectangle('.rectangle.twentysix');
+        rectangle('.rectangle.twentyseven');
+        rectangle('.rectangle.twentyeight');
+        rectangle('.rectangle.twentynine');
+        rectangle('.rectangle.thirty');
+        document.querySelector('.screen').style.backgroundColor = '#000000'.replace(/0/g, function () {
+            return (~~(Math.random() * 16)).toString(16);
+        });
+        document.querySelector('.text').style.opacity = 0;
+    }
+};
+//# sourceURL=pen.js
+</script>
+</body></html>

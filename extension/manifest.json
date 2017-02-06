@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+    "name": "EmoWeb Maker",
+    "description": "This is EmoWeb Maker",
+    "version": "1.0",
+    "icons": {
+        "32": "./icon.png"
+    },
+    "browser_action": {
+        "default_title": "EmoWebMaker",
+        "default_popup": "./popup.html",
+        "default_icon": { "32": "./icon.png" }
+    },
+    "content_scripts": [{
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "css": ["./css/content_styles.css"],
+        "js": ["./js/jquery-3.1.1.min.js", "./js/content_script.js"]
+    }],
+    "background": {
+        "scripts": [
+            "./js/jquery-3.1.1.min.js",
+            "./js/background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "tabs",
+        "https://*/*",
+        "http://*/*",
+        "storage"
+    ],
+    "web_accessible_resources": [
+        "images/*",
+        "images/banner/*",
+        "images/bg/*"
+    ]
+}

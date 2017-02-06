@@ -1,0 +1,84 @@
+.table1_emo {
+    border-top: 2px solid hotpink;
+    border-left: 2px solid royalblue;
+    border-bottom: 2px solid yellowgreen;
+    border-right: 2px solid gold;
+    background-color: white;
+}
+
+.table2_emo {
+    border: 1px solid orange;
+}
+
+.table2_emo > li,
+.table2_emo > dt,
+.table2_emo > dd {
+    border: 4px dotted gold;
+}
+
+.table3_emo {
+    border: 7px double hotpink;
+    background: white;
+}
+
+.table3_emo > li,
+.table3_emo > dt,
+.table3_emo > dd {
+    border: 3px dotted hotpink;
+}
+
+a.blue-link_emo {
+    color: rgb(0, 0, 238) !important;
+    text-decoration: underline !important;
+    transform: none !important;
+    background: none !important;
+}
+
+.access_emo {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 88px;
+    height: 31px;
+    background: url('chrome-extension://__MSG_@@extension_id__/images/banner/bnr_ninja.gif') #000;
+}
+
+.small_emo {
+    font-size: xx-small !important;
+}
+
+.bg1_emo {
+    background: url('chrome-extension://__MSG_@@extension_id__/images/bg/01.jpg') #fff fixed left top no-repeat;
+}
+
+.bg2_emo {
+    background: url('chrome-extension://__MSG_@@extension_id__/images/bg/02.jpg') #fff fixed right bottom no-repeat;
+}
+
+.bg3_emo {
+    background: url('chrome-extension://__MSG_@@extension_id__/images/bg/03.gif') #fff repeat;
+}
+
+.counter_emo {
+    position: relative;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    background: url('chrome-extension://__MSG_@@extension_id__/images/counter.png') no-repeat top;
+    background-size: contain;
+}
+
+.counter_emo > p {
+    display: block;
+    font-weight: bold !important;
+    position: absolute;
+    bottom: 0;
+    font-size: 16px !important;
+}
+
+.banner_emo {
+    width: 31px;
+    height: 31px;
+    background: url('chrome-extension://__MSG_@@extension_id__/images/banner/bnr_lolipop-small.gif') repeat;
+}
